@@ -1,6 +1,6 @@
-# Rubymotion::Observer
+# RubyMotionObserver
+This provides a RubyMotion compatible implementation of the ruby stdlib Observable library.
 
-TODO: Write a gem description
 
 ## Installation
 
@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+This works in exactly the same manner as the [standard Ruby implementation](http://www.ruby-doc.org/stdlib-1.9.3/libdoc/observer/rdoc/Observable.html).
 
 ## Contributing
 
