@@ -1,19 +1,16 @@
 # -*- encoding: utf-8 -*-
-lib = File.expand_path('../lib', __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'rubymotion-observer/version'
+require File.expand_path('../lib/observer/version.rb', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.name          = "rubymotion-observer"
-  gem.version       = Rubymotion::Observer::VERSION
+  gem.version       = RubyMotionObserver::Version
   gem.authors       = ["Michael Erasmus"]
   gem.email         = ["michaelerasmus@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.description   = %q{A RubyMotion compatible version of Ruby's 'observer' lib}
+  gem.summary       = %q{A RubyMotion compatible version of Ruby's 'observer' lib}
+  gem.homepage      = "https://github.com/michael-erasmus/rubymotion-observer"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
-  gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
 end
